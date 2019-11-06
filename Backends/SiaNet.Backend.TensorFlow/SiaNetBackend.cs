@@ -461,7 +461,7 @@ namespace SiaNet.Backend.TensorFlowLib
 
         public SiaTensor Min(SiaTensor x, int dim)
         {
-            return Out(tf.min(In(x), dim)));
+            return Out(tf.min(In(x), dim));
         }
 
         public SiaTensor Min(SiaTensor x, params int[] dims)
